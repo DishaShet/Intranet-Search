@@ -9,6 +9,7 @@ import { SearchPageComponent } from './search-page/search-page.component';
   declarations: [LoginPageComponent, SearchPageComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports:[LoginPageComponent, SearchPageComponent]
 })
 export class PagesModule { }
