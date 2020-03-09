@@ -4,13 +4,11 @@
     margin: auto;
     flex-direction: column;
     background-color: rgb(235, 238, 240); 
-
 }
 
 .header{
     height:15%;
-    background-color: rgb(32, 121, 113)
-
+    background-color: rgb(32, 121, 113);
 }
 
 .footer{
