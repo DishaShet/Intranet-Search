@@ -1,13 +1,12 @@
 .container-fluid{
     display: flex;
     height: 100vh;
-    margin: auto;
     flex-direction: column;
     background-color: rgb(235, 238, 240); 
 }
 
 .header{
-    height:15%;
+    height:20%;
     background-color: rgb(32, 121, 113);
 }
 
@@ -17,6 +16,6 @@
 }
 
 .main{
-    height: 75%;
+    height: 70%;
 }
 

@@ -1,3 +1,31 @@
-<div>
-    <button routerLink="/login-page">Login</button>
+<div class="container-fluid">
+    <div class="header-container">
+        <img src="src/assets/logo.png">
+        <button class="btn btn-default btn-xs" [routerLink]="['/login-page']"><span class="glyphicon glyphicon-user"></span>Login</button>
+    </div>
+    <div class="nav-container">
+        <nav class="nav">        
+            <ul class="nav-list">
+                <li>
+                    <a>Home</a>
+                </li>
+                <li>
+                    <a>News</a>
+                </li>
+                <li>
+                    <a>My working Day</a>
+                </li>
+                <li>
+                    <a>IT & Facilities</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="search-container">
+        <input type="text">
+        <button type="submit"><i class="glyphicon glyphicon-search">Search</i></button>
+    </div>
 </div>
+
+
+
