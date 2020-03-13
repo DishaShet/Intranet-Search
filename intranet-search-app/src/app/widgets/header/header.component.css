@@ -1,3 +1,61 @@
+
+ .img-logo{
+    height: 44px;
+    width: 130px;
+}
+
+.top-navigation{
+    height: 4rem;
+   background-color: white;
+}
+
+.top-navigation-logo{
+    
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: .75rem 1.5rem;
+}
+
+.login-btn-div{
+   align-self: center;
+}
+
+.main-navigation{
+    height: 3rem;
+    background-color: #00857a;
+}
+.main-navigation-nav{
+    max-width: 1280px;
+    margin: auto;
+    height: 3rem;
+}
+
+.nav-list{
+    margin: 0;
+    display: block;
+    align-self: center;
+}
+
+.nav-list li{
+    text-align: center;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+.nav-list a{
+    display: inline-block;
+    text-justify: auto;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.nav-list li:hover{
+    background-color: #005e5d;
+}
+
 /* 
 
 .header-container{
@@ -80,21 +138,3 @@
 
  */
 
-
- .img-logo{
-     height: 44px;
-     width: 130px;
- }
-
- .top-navigation-logo{
-     background-color: white;
-     display: flex;
-     position: relative;
-     padding: .75rem 1.5rem;
- }
-
- .login-btn-div{
-    position: absolute;
-    right: 0;
-    align-self: center;
- }

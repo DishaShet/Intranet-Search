@@ -1,14 +1,18 @@
-<div>   
-    <div class="top-navigation-logo">
-        <div>
-            <img src="assets/abnlogo.svg" class="img-logo">
-        </div>
-        <div class="login-btn-div">
-            <button class="btn btn-default btn-xs" [routerLink]="['/login-page']"><span class="glyphicon glyphicon-user"></span>Login</button>
-        </div>
-        
+<div class="header-container">   
+    <div class="top-navigation">
+        <div class="top-navigation-logo">
+            <div>
+                <img src="assets/abnlogo.svg" class="img-logo">
             </div>
-    <!-- <div class="nav-container">       
+            <div class="login-btn-div">
+                <button class="btn btn-default btn-xs" [routerLink]="['/login-page']">
+                    <span class="glyphicon glyphicon-user"></span>Login</button>
+            </div>       
+        </div>
+    </div>
+    
+    <div class="main-navigation"> 
+        <nav class="main-navigation-nav">
             <ul class="nav-list">
                 <li>
                     <a>Home</a>
@@ -23,11 +27,13 @@
                     <a>IT & Facilities</a>
                 </li>
             </ul>
+        </nav>                 
     </div>
-    <div class="search-container">
+
+    <!-- <div class="search-container">
         <input type="search">
         <button type="submit"><i class="glyphicon glyphicon-search"></i>Search</button>
-    </div> -->
+    </div>  -->
 
 </div>
 
