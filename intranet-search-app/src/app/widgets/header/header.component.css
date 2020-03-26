@@ -20,12 +20,31 @@
 
 .login-btn-div{
    align-self: center;
+
+}
+
+
+.btn-nav{
+    padding: 5px 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    border: none;
+    background-color: #ffd200;
+    transition-timing-function: ease;
+    transition-delay: .3s;
+    transition-duration: 1s;
+}
+
+
+.login:hover, .logout:hover{
+    background-color: #e0bd22;
 }
 
 .main-navigation{
     height: 3rem;
     background-color: #00857a;
 }
+
 .main-navigation-nav{
     max-width: 1280px;
     margin: auto;
@@ -34,87 +53,60 @@
 
 .nav-list{
     margin: 0;
-    display: block;
-    align-self: center;
+    background-color: #00857a;
 }
 
 .nav-list li{
     text-align: center;
     padding: 14px 20px;
-    display: inline-block;
+    display: inline-block; 
 }
 
-.nav-list a{
-    display: inline-block;
-    text-justify: auto;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-}
+
 
 .nav-list li:hover{
-    background-color: #005e5d;
-}
-
-/* 
-
-.header-container{
-    height: 30%;
-    width:100%;
-    flex-grow: inherit;
-    background-color: white;
-    
-
-
-
-.header-container{
-    height: 30%;
-    background-color: white;  
-}
-
-.img{
-    height: auto;
-    width: 100;
- 
-}
-
-.header-container button{
-    align-self: flex-end;
-    justify-content: center;
-    padding-right: 20px; 
-    background-color: rgb(245, 245, 106);
-    text-align: center;
-}
-
-
-.nav-container{
-    height: 20%;
-    background-color: rgb(36, 187, 187);
-}
-
-.nav-list{
-    margin: 0;
-}
-
-.nav-list li{
-    display: inline;
-    text-align: center
+    background-color: #159288;
 }
 
 .nav-list a{
-    display: inline-block;
-    text-justify: auto;
+    color: white;
     text-decoration: none;
-    padding-right: 10px;
-    padding-left: 10px;
-    text-align: center;
+}
+
+.active{
+    background-color: #004c4c;
+}
+
+.glyphicon-chevron-down:before {
+    content: "\e114";
+    font-size: x-small;
+    visibility: hidden;
     color: white
 }
 
-.nav-list a:hover{
-    background-color: teal;
+
+@media screen and (max-width: 480px){
+
+
+.main-navigation-nav{
+    width: 100%;
+    height: 3rem;
+    margin: 0;
 }
 
+.nav-list{
+    padding: 0;
+}
+
+.nav-list > li:not(:first-child){
+    display:none;
+}
+
+.glyphicon-chevron-down:before {
+    visibility: visible;
+}
+}
+/*
 
 .search-container{
     height: 50%;

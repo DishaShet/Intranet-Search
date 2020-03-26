@@ -1,21 +1,27 @@
-<div class="header-container">   
+<div class="header-container">
     <div class="top-navigation">
         <div class="top-navigation-logo">
             <div>
                 <img src="assets/abnlogo.svg" class="img-logo">
             </div>
             <div class="login-btn-div">
-                <button class="btn btn-default btn-xs" [routerLink]="['/login-page']">
-                    <span class="glyphicon glyphicon-user"></span>Login</button>
-            </div>       
+                <button class="btn btn-default btn-nav logout" id="logout" (click)="logoutClick()" *ngIf="loggedIn">
+                    <span class="glyphicon glyphicon-user"></span> Logout</button>
+                <!-- <button class="btn btn-default btn-nav login" id="login" (click)="loginClick()" *ngIf="!loggedIn">
+                            <span class="glyphicon glyphicon-user"></span>  Login</button> -->
+            </div>
         </div>
     </div>
-    
-    <div class="main-navigation"> 
+
+
+    <div class="main-navigation">
         <nav class="main-navigation-nav">
-            <ul class="nav-list">
-                <li>
-                    <a>Home</a>
+            <ul class="nav-list" id="toggle-nav">
+                <li class="active">
+                    <a>Home
+                        <i class="glyphicon glyphicon-chevron-down" id="collapse-nav" (click)="toggleFunction()"></i>
+                    </a>
+
                 </li>
                 <li>
                     <a>News</a>
@@ -27,7 +33,27 @@
                     <a>IT & Facilities</a>
                 </li>
             </ul>
-        </nav>                 
+            <!-- <ul class="nav-list" >
+                <li class="active">
+                    <a>Home <i class="glyphicon glyphicon-chevron-down" id="collapse-nav"></i></a>    
+                     
+                </li>
+                <li class="nav-list-menu">
+                    <ul class="nav-list-menu-items">
+                        <li>
+                            <a>News</a>
+                        </li>
+                        <li>
+                            <a>My working Day</a>
+                        </li>
+                        <li>
+                            <a>IT & Facilities</a>
+                        </li>
+                    </ul>
+                </li>               
+                
+            </ul> -->
+        </nav>
     </div>
 
     <!-- <div class="search-container">
@@ -36,6 +62,3 @@
     </div>  -->
 
 </div>
-
-
-

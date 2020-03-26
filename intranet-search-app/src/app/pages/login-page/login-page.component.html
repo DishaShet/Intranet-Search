@@ -1,1 +1,38 @@
-<p>login-page works!</p>
+<div class="login-container">
+    <div class="main-loginform">
+        <div class="login-title">
+            <h1>Login</h1>
+        </div>
+        <div class="login-form">
+
+
+            <form [formGroup]="loginForm" id="form" (ngSubmit)="onSubmit()">
+                <div class="login-form-inputs">
+                    <span  class="glyphicon glyphicon-user icon"></span>
+                    <input id="input" type="text" placeholder="UserName" formControlName="userName">
+                    
+
+                </div>
+                <div class="login-form-inputs">
+                    <span  class="glyphicon glyphicon-lock icon"> </span>
+                    <input id="input" type="password" placeholder="Password" formControlName="password">
+                    
+
+                </div>
+                <div class="login-form-inputs">
+                    <label>Remember me</label>
+                    <input class="chkbox" type="checkbox">
+                </div>
+                <div class="login-form-inputs">
+                    <a [routerLink]="['/Home']">Forgot your password?</a>
+                </div>
+                <div class="login-form-inputs">
+                    <button class="btn btn-primary login-btn" type="submit">Login</button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
