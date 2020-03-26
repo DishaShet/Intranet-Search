@@ -13,6 +13,7 @@
 
 .main{
     height: 100%;
+    padding-top: 100px;
     flex: 1;
 }
 
@@ -23,5 +24,13 @@
     width: 100%;
     flex: 1;
 }
+
+@media screen and (max-width: 480px){
+    .main{
+        height: 100%;
+        padding-top: 120px;
+    }
+}
+
 
 
