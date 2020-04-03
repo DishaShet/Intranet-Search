@@ -7,12 +7,15 @@ import { INSPECT_MAX_BYTES } from 'buffer';
 })
 export class SubjectService {
   subject = new Subject<boolean>();
+  // offsetLogin=new Subject<string>();
 
 userLoggedIn(){
   return this.subject.next(true);
 }
   
-
+// offsetLoginForm(){
+//   return this.offsetLogin.next('120px');
+// }
 }
 
 

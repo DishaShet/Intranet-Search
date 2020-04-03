@@ -73,9 +73,9 @@
     text-decoration: none;
 }
 
-.active{
+/* .active{
     background-color: #004c4c;
-}
+} */
 
 .glyphicon-chevron-down:before {
     content: "\e114";

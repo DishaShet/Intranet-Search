@@ -8,27 +8,24 @@
 
 .header{
     height:7rem;
-    flex: 1;
+
 }
 
 .main{
-    height: 100%;
-    padding-top: 100px;
-    flex: 1;
+     
 }
 
 .footer{
     height: 4rem;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    flex: 1;
+    /* bottom: 0;
+    position: absolute; 
+    width: 100%;*/
+  
 }
 
 @media screen and (max-width: 480px){
-    .main{
-        height: 100%;
-        padding-top: 120px;
+    .main{    
+        /* padding-top: 120px; */
     }
 }
 

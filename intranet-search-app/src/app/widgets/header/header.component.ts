@@ -13,15 +13,16 @@ export class HeaderComponent implements OnInit {
 
   constructor(private route: Router, private subjectService: SubjectService) {
   }
-
   ngOnInit() {
     if (sessionStorage.getItem('isLoggedIn') == 'true')
       this.loggedIn = true;
     else
       this.loggedIn = false;
+
     this.subjectService.subject.subscribe(data => {
+      console.log(data);
       this.loggedIn = data;
-    })
+    });
 
   }
 
@@ -38,9 +39,9 @@ export class HeaderComponent implements OnInit {
         element.style.display = "none";
         el.childNodes[0].style.display = "inline-block";
       }
-
       else
         element.style.display = "block";
+        // this.subjectService.offsetLoginForm();
 
     });
 

@@ -9,22 +9,22 @@
             <form [formGroup]="loginForm" id="form" (ngSubmit)="onSubmit()">
                 <div class="login-form-inputs">
                     <span  class="glyphicon glyphicon-user icon"></span>
-                    <input id="input" type="text" placeholder="UserName" formControlName="userName">
+                    <input id="input" type="text" placeholder="UserName" formControlName="userName" [(ngModel)]="user.userName">
                     
 
                 </div>
                 <div class="login-form-inputs">
                     <span  class="glyphicon glyphicon-lock icon"> </span>
-                    <input id="input" type="password" placeholder="Password" formControlName="password">
+                    <input id="input" type="password" placeholder="Password" formControlName="password" [(ngModel)]="user.password">
                     
 
                 </div>
                 <div class="login-form-inputs">
-                    <label>Remember me</label>
-                    <input class="chkbox" type="checkbox">
+                    <label class="chkbox-label">Remember me </label>
+                    <input class="chkbox" type="checkbox" formControlName="rememberMe" [(ngModel)]="user.rememberMe">
                 </div>
                 <div class="login-form-inputs">
-                    <a [routerLink]="['/Home']">Forgot your password?</a>
+                    <a [routerLink]="['']">Forgot your password?</a>
                 </div>
                 <div class="login-form-inputs">
                     <button class="btn btn-primary login-btn" type="submit">Login</button>
